@@ -1,0 +1,115 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+  font-weight: 700;
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #ffd0d0;
+  }
+
+  & article {
+    border-radius: 0.5em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: white;
+    box-shadow: 0 0 10px #c2c2c2;
+    width: 25%;
+
+    > div {
+      padding: 2em 0 1em 0;
+      display: grid;
+      flex-direction: column;
+      gap: 0.2em;
+      justify-content: center;
+      place-items: center;
+
+      > img {
+        width: 5em;
+        height: 5em;
+        transition: 0.2s;
+        &:hover {
+          transform: rotate(360deg);
+          border-radius: 50%;
+          box-shadow: 0 0 10px #ccc;
+        }
+      }
+
+      > h2 {
+        font-size: 20px;
+        color: #2f2f2f;
+      }
+
+      > a {
+        font-size: 12px;
+        text-decoration: none;
+        color: #2f2f2f;
+      }
+    }
+
+    & form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+
+      > label {
+        font-size: 12px;
+        color: #2f2f2f;
+      }
+
+      > div {
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 0.25em;
+        background: white;
+        padding: 0 0.5em;
+
+        > input {
+          border: none;
+          outline: none;
+          background: none;
+          color: #ac7bc7;
+          font-size: 10px;
+          width: 100%;
+        }
+
+        > button {
+          background: none;
+          border: none;
+          cursor: pointer;
+
+          > img {
+            width: 2em;
+            height: 2em;
+          }
+        }
+      }
+
+      > button {
+        font-size: 14px;
+        border: none;
+        padding: 0.6em 0;
+        cursor: pointer;
+        background: #ac7bc7;
+        border-radius: 0.25em;
+        color: white;
+        transition: 0.2s;
+
+        &:hover {
+          background: #7bc7af;
+        }
+      }
+
+      > a {
+        font-size: 10px;
+        color: #2f2f2f;
+      }
+    }
+  }
+}
